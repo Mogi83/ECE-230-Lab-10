@@ -3,6 +3,12 @@ module t_flip_flop (
     output reg Q,
     output NotQ
 );
+    
+    // set the intial state
+    initial begin
+        Q <= 0;
+    end
+
 
     // Implement t_flip_flop here
     
