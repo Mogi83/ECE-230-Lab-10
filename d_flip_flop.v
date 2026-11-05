@@ -8,6 +8,9 @@ module d_flip_flop (
         Q <= 0;
     end
     
-    // Implement d_flip_flop here
+    always @(posedge clock)
+        Q <= D;
     
+    assign NotQ = ~Q;
+
 endmodule
