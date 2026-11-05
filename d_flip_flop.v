@@ -7,9 +7,10 @@ module d_flip_flop (
     initial begin
         Q <= 0;
     end
-    
+
+    // data D going to Q only at the instant the clock goes from 0 to 1 (posedge)
     always @(posedge clock)
-        Q <= D;
+        Q <= D;  
     
     assign NotQ = ~Q;
 
