@@ -4,14 +4,14 @@ module top(
     output[5:0] led
 );
 
-    d_flip_flop(
+    d_flip_flop dff(
         .D(sw[0]),
         .clock(btnC),
         .Q(led[0]),
         .NotQ(led[1])
     );
     
-    jk_flip_flop(
+    jk_flip_flop jkff(
         .J(sw[1]),
         .K(sw[2]),
         .clock(btnC),
@@ -19,7 +19,7 @@ module top(
         .NotQ(led[3])
     );
     
-    t_flip_flop(
+    t_flip_flop tff(
         .T(sw[3]),
         .clock(btnC),
         .Q(led[4]),
