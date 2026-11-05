@@ -1,6 +1,6 @@
 module jk_flip_flop (
     input J, K, clock,
-    output reg Q,
+    output Q,
     output NotQ
 );  
     // Since we are using our D flipflop we only

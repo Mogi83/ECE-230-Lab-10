@@ -1,16 +1,20 @@
 module t_flip_flop (
     input T, clock,
-    output reg Q,
+    output Q,
     output NotQ
 );
     
-    // set the intial state
-    initial begin
-        Q <= 0;
-    end
-
-
-    // Implement t_flip_flop here
+    // To make a t flip flop we can just set
+    // J = K on our jk_flip_flop and we get
+    // our intended behavior
+    
+    jk_flip_flop jkff (
+        .J(T),
+        .K(T),
+        .clock(clock),
+        .Q(Q),
+        .NotQ(NotQ)
+     );
     
 endmodule
 
