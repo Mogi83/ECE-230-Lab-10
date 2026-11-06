@@ -17,6 +17,8 @@ Evan Bullwinkle
 
 ## Summary
 
+In this lab we explored how to build a D, JK, and T flipflop and how they are related to each other. We also learned that a JK flip flop can be representative of both a D and T flipflop depending on how we set J and K.
+
 ## Lab Questions
 
 ### What is difference between edge and level sensitive circuits?
